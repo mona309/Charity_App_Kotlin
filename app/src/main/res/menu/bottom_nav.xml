@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/home"
+        android:iconTint="@color/white"
+        android:visible="true"
+        android:enabled="true"
+        android:icon="@drawable/menu"/>
+    <item android:title="Profile"
+        android:id="@+id/profile"
+        android:iconTint="@color/white"
+        android:visible="true"
+        android:enabled="true"
+        android:icon="@drawable/menu"/>
+    <item android:title="Our Stories"
+        android:iconTint="@color/white"
+        android:visible="true"
+        android:enabled="true"
+        android:id="@+id/ourstories"
+        android:icon="@drawable/menu" />
+</menu>

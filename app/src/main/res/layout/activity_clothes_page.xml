@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".ClothesPage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="300px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="25px">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Clothes"
+                android:textAlignment="center"
+                android:textSize="70px"
+                android:textStyle="bold"
+
+                />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:text="Already Donated :-"
+        android:textSize="40px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="100px" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:layout_marginHorizontal="50dp"
+        android:background="#4ac1cf"
+        android:divider="@color/white"
+        android:dividerHeight="1dp"
+        android:foregroundGravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:focusable="true"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_margin="40px"
+        app:dividerColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/listView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50px"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="20px"
+        android:text="New Donation :- "
+        android:textSize="40px"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="#4ac1cf"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Choose Image" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/listname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="100px"
+        android:hint="Listing Name" />
+
+    <Spinner
+        android:id="@+id/clothingtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="100px"
+        android:layout_marginVertical="10px"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <Spinner
+        android:id="@+id/clothingsize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="100px"
+        android:layout_marginVertical="10px"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Upload"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="607dp" />
+
+</LinearLayout>
